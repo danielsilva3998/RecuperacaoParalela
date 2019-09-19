@@ -1,0 +1,31 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="gitcard.css">
+</head>
+
+<body class="ready">
+
+    <header class="hearder-search">
+        <input type="text" name="usuario_github" id="usuario_github" />
+        <input type="button" onclick="getGitHubInfo()" name="buscar_github" id="buscar_github" value="Mostrar Cartão" />
+    </header>
+
+    <div class="github-card user-card">
+        <div class="header User"></div>
+        <a class="avatar" target="_top"><img id="github_avatar" src="avatarURL"></a>
+        <div class="content">
+    
+            <ul class="status">
+                <li id="repos"><a id="mostrar_repos">Repos</a></li>
+                <li id ="gists"><a id="mostrar_gists">Gists</a></li>
+                <li id="fol"><a id ="mostrar_fol">Followers</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="gitcard.js"></script>
+</body>
+
+</html>
